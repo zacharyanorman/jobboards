@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom YouTube Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Custom YouTube Search</h1>
+  <section id="preferences">
+    <label>
+      API Key:
+      <input type="text" id="api-key" placeholder="Your YouTube API Key" />
+    </label>
+    <label>
+      Max Results:
+      <input type="number" id="max-results" value="10" min="1" max="50" />
+    </label>
+    <label>
+      Order By:
+      <select id="order">
+        <option value="relevance">Relevance</option>
+        <option value="date">Upload Date</option>
+        <option value="rating">Rating</option>
+        <option value="viewCount">View Count</option>
+      </select>
+    </label>
+  </section>
+  <section id="search">
+    <input type="text" id="query" placeholder="Search videos" />
+    <button id="search-btn">Search</button>
+  </section>
+  <div id="results"></div>
+  <script src="script.js"></script>
+</body>
+</html>
